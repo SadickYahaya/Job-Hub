@@ -1,0 +1,54 @@
+header {
+  height: 4em;
+  background-color: var(--secondary-background);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logo,
+.profile,
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.navbar span:hover {
+  color: var(--text-hover);
+  transition: var(--transition);
+}
+
+.profile {
+  gap: 6px;
+}
+
+.navbar {
+  gap: 1em;
+}
+
+.moon-icon {
+  margin-right: 5px;
+  border-right: 1px solid var(--color);
+  padding-right: 5px;
+}
+
+.profile img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border-left: 1px solid var(--color);
+}
+
+/* @media (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+    gap: 3em;
+  }
+} */
