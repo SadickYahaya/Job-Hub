@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom/";
 import "../Styles/jobDetails.css";
 import { ReactComponent as BackIcon } from "../../assets/back.svg";
 import { ReactComponent as TimeIcon } from "../../assets/time.svg";
+import { ReactComponent as LocationIcon } from "../../assets/time.svg";
 import Logo from "../../assets/job-logo.webp";
 
 const JobDetails = () => {
@@ -39,10 +40,10 @@ const JobDetails = () => {
           <div>
             <div className="brand-logo">
               <img src={Logo} alt=""></img>
-              <div className="location">
-                <span>Kasisto</span>
-                <span>New York</span>
-              </div>
+              <span className="job-location">
+                <LocationIcon className="location-icon" />
+                Accra, Thompson
+              </span>
             </div>
             {/* <span>Humanizing Digital Experiences</span> */}
             {/* <span>
