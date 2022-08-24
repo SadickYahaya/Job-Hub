@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom/";
 
 import "../Styles/jobDetails.css";
 import { ReactComponent as BackIcon } from "../../assets/back.svg";
+import { ReactComponent as TimeIcon } from "../../assets/time.svg";
 import Logo from "../../assets/job-logo.webp";
 
 const JobDetails = () => {
@@ -11,7 +12,7 @@ const JobDetails = () => {
     <>
       <div className="job-details">
         <div className="section-1">
-          <div className="back-icon" onClick={() => navigate('/')}>
+          <div className="back-icon" onClick={() => navigate("/")}>
             <BackIcon />
             Back to search
           </div>
@@ -27,8 +28,13 @@ const JobDetails = () => {
         <div className="section-2">
           <div className="job-details-title">
             <h1>Front-End Software Engineer</h1>
-            <span>5 days ago</span>
-            <span className="fulltime type">Full time</span>
+            <div id="date">
+              <span className="date">
+                <TimeIcon className="date-icon" />
+                <span>5 days ago</span>
+              </span>
+              <span className="fulltime type">Full time</span>
+            </div>
           </div>
           <div>
             <div className="brand-logo">
