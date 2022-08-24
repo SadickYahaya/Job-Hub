@@ -1,0 +1,79 @@
+.job-details {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 90vw;
+  place-content: center;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.section-1,
+.how-to-apply,
+.back-icon,
+.section-2,
+.brand-logo,
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.how-to-apply {
+  gap: 0.3em;
+}
+
+.section-2 {
+  gap: 2em;
+}
+
+.back-icon {
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+  color: var(--text-hover);
+  cursor: pointer;
+}
+
+.email {
+  color: var(--border-secondary);
+}
+
+#date, .date {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.date {
+    gap: 0.2em;
+}
+
+.job-details-title .type {
+  margin-left: 1em;
+}
+
+.brand-logo {
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.brand-logo img {
+  width: 100px;
+  height: 70px;
+  border-radius: var(--borderRadius);
+}
+
+.location {
+  gap: 0.2em;
+  justify-content: space-evenly;
+}
+
+.date {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .job-details {
+    grid-template-columns: 1fr;
+  }
+}

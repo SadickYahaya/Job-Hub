@@ -7,6 +7,8 @@ import { ReactComponent as DownArrow } from "../assets/down.svg";
 import { ReactComponent as MoonIcon } from "../assets/moon.svg";
 import { ReactComponent as SunIcon } from "../assets/sun.svg";
 import avatar from "../assets/avatar.jpg";
+import Search from "./Search";
+
 
 const Header = (props) => {
   const [icon, setIcon] = useLocalStorage("");
@@ -23,15 +25,14 @@ const Header = (props) => {
           <h3>Jobs Hub</h3>
         </div>
         <div className="navbar">
-          <span>Find Jobs</span>
-          <span>Company Reviews</span>
+          <Search />
         </div>
         <div className="profile">
           <span onClick={onClick}>
             {icon ? (
-              <SunIcon className="moon-icon" />
-            ) : (
               <MoonIcon className="moon-icon" />
+            ) : (
+              <SunIcon className="moon-icon" />
             )}
           </span>
           <img src={avatar} alt="" />

@@ -1,5 +1,16 @@
 .sidebar {
-  /* border: 1px solid black; */
+  background-color: var(--secondary-background2);
+  padding: 1em;
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.sidebar-title {
+  font-weight: 700;
+  margin-bottom: 1em;
 }
 
 .full-time-checkbox {
@@ -14,12 +25,21 @@
   font-weight: 700;
   text-decoration: underline;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: fit-content;
+  }
 }
 
 @media (max-width: 600px) {
   .sidebar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
     gap: 3em;
   }

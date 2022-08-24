@@ -32,3 +32,13 @@ input {
     height: 2.5em;
   }
 }
+
+@media (max-width: 1024px) {
+  .location-input {
+    display: none;
+  }
+
+  input {
+    width: 10em;
+  }
+}

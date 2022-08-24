@@ -17,11 +17,15 @@ export const GlobalStyles = createGlobalStyle`
     fill: ${({ theme }) => theme.text};
   }
 
-  .job {
+  .job, .sidebar {
     background: ${({ theme }) => theme.headerBg};
   }
 
   .fulltime {
     color: ${({ theme }) => theme.body};
+  }
+
+  #demo-customized-radios {
+    color: ${({ theme }) => theme.text};
   }
   `;
