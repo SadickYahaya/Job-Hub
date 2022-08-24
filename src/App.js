@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import useLocalStorage from "use-local-storage";
 
 import Header from "./components/Header";
