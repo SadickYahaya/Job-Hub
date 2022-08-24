@@ -1,14 +1,16 @@
-import React from 'react'
-import Header from './components/Header'
-import Search from './components/Search'
+import React from "react";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Search from "./components/Search";
 
 const App = () => {
   return (
     <>
-    <Header />
-    <Search />
+      <Header />
+      <Search />
+      <Main />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

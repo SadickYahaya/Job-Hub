@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 :root {
-  --background: #edf6f9;
+  --background: #f8f8fb;
   --secondary-background: #f1faee;
+  --secondary-background2: #fff;
   --color: #1d3557;
   --text-hover: #e63946;
   --border: #a8dadc;
   --button-color: #fffcf2;
+  --button-bg-color: #e63946;
+  --button-bg-color2: #a8dadc;
   --border-secondary: #457b9d;
   --transition: all 0.5ms ease 0.2ms;
+  --borderRadius: 5px;
 }
 
 *,

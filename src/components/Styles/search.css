@@ -1,9 +1,10 @@
 .search {
-  height: 5em;
-  border: 1px solid var(--border);
+  height: 8em;
+  border-top: 0.5px solid var(--border);
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: var(--button-color); */
 }
 
 .search-form {
@@ -26,6 +27,3 @@ input[type="text"]:focus {
   border: 1px solid var(--border-secondary);
 }
 
-.search-form button {
-    
-}
