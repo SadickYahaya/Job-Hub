@@ -1,6 +1,6 @@
 .search {
   height: 8em;
-  border-top: 0.5px solid var(--border);
+  /* border-top: 0.5px solid var(--border); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +24,11 @@ input {
 }
 
 @media (max-width: 600px) {
-    .search-form {
-        flex-direction: column;
-    }
+  .search-form {
+    flex-direction: column;
+  }
 
-    .btn {
-        height: 2.5em;
-    }
+  .btn {
+    height: 2.5em;
+  }
 }
-

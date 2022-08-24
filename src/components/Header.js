@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import useLocalStorage from "use-local-storage";
 
 import "./Styles/header.css";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { ReactComponent as DownArrow } from "../assets/down.svg";
 import { ReactComponent as MoonIcon } from "../assets/moon.svg";
+import { ReactComponent as SunIcon } from "../assets/sun.svg";
 import avatar from "../assets/avatar.jpg";
 
-const Header = () => {
+const Header = (props) => {
+  const [icon, setIcon] = useLocalStorage("");
+
+  const onClick = () => {
+    props.onClick();
+    setIcon(!icon);
+  };
   return (
     <>
       <header>
@@ -19,10 +27,16 @@ const Header = () => {
           <span>Company Reviews</span>
         </div>
         <div className="profile">
-          <MoonIcon className="moon-icon" />
+          <span onClick={onClick}>
+            {icon ? (
+              <SunIcon className="moon-icon" />
+            ) : (
+              <MoonIcon className="moon-icon" />
+            )}
+          </span>
           <img src={avatar} alt="" />
           <p>Sadick Yahaya Abubakar</p>
-          <DownArrow />
+          <DownArrow className="down-arrow" />
         </div>
       </header>
     </>

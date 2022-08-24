@@ -2,24 +2,26 @@
   /* border: 1px solid black; */
 }
 
-.full-time {
+.full-time-checkbox {
   display: flex;
-  align-items: center;
-  margin-top: 0em;
+  margin-top: 1em;
   margin-bottom: 3em;
+  flex-direction: column;
 }
 
 #demo-radio-buttons-group-label {
   color: var(--color);
   font-weight: 700;
   text-decoration: underline;
+  font-size: 15px;
 }
 
 @media (max-width: 600px) {
   .sidebar {
     display: flex;
-    flex-direction: column-reverse;
-    width: 15em;
+    flex-direction: row;
+    width: auto;
+    gap: 3em;
   }
 
   .location-input {
@@ -30,16 +32,13 @@
     align-items: flex-start;
   }
 
-  .locations {
-  }
-
-  input[type="text"] {
-    padding-right: 50px;
-  }
-
   .find-locationBtn {
     margin-left: -50px;
     height: 20px;
     width: 50px;
+  }
+
+  .full-time-checkbox {
+    margin-top: 0;
   }
 }
