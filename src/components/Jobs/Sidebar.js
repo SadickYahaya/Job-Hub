@@ -24,7 +24,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="sidebar">
-        <FormControl>
+        <FormControl className="locations">
           <FormLabel id="demo-radio-buttons-group-label">Locations</FormLabel>
           <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
@@ -41,7 +41,9 @@ const Sidebar = () => {
                     fontWeight: "700",
                     fontSize: "14px",
                   }}
-                >Atlanta</span>
+                >
+                  Atlanta
+                </span>
               }
             />
             <FormControlLabel
@@ -54,7 +56,9 @@ const Sidebar = () => {
                     fontWeight: "700",
                     fontSize: "14px",
                   }}
-                >Tokyo</span>
+                >
+                  Tokyo
+                </span>
               }
             />
             <FormControlLabel
@@ -67,7 +71,9 @@ const Sidebar = () => {
                     fontWeight: "700",
                     fontSize: "14px",
                   }}
-                >CapeTown</span>
+                >
+                  CapeTown
+                </span>
               }
             />
             <FormControlLabel
@@ -80,7 +86,9 @@ const Sidebar = () => {
                     fontWeight: "700",
                     fontSize: "14px",
                   }}
-                >Jakarta</span>
+                >
+                  Jakarta
+                </span>
               }
             />
           </RadioGroup>
@@ -100,7 +108,9 @@ const Sidebar = () => {
                       fontWeight: "700",
                       fontSize: "14px",
                     }}
-                  >Full Time</span>
+                  >
+                    Full Time
+                  </span>
                 }
                 value="paid"
                 id="paid"
