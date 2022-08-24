@@ -1,15 +1,45 @@
 .sidebar {
-    /* border: 1px solid black; */
+  /* border: 1px solid black; */
 }
 
 .full-time {
-    display: flex;
-    align-items: center;
-    margin-top: 3em ;
+  display: flex;
+  align-items: center;
+  margin-top: 0em;
+  margin-bottom: 3em;
 }
 
 #demo-radio-buttons-group-label {
-    color: var(--color);
-    font-weight: 700;
-    text-decoration: underline;
+  color: var(--color);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 15em;
+  }
+
+  .location-input {
+    display: none;
+  }
+
+  .full-time {
+    align-items: flex-start;
+  }
+
+  .locations {
+  }
+
+  input[type="text"] {
+    padding-right: 50px;
+  }
+
+  .find-locationBtn {
+    margin-left: -50px;
+    height: 20px;
+    width: 50px;
+  }
 }

@@ -7,8 +7,12 @@ const Search = () => {
       <div className="search">
         <form className="search-form">
           <input type="text" placeholder="job titles, keywords or company" />
-          <input type="text" placeholder="city, state or zip code" />
-          <button className='btn'>Find Jobs</button>
+          <input
+            className="location-input"
+            type="text"
+            placeholder="city, state or zip code"
+          />
+          <button className="btn">Find Jobs</button>
         </form>
       </div>
     </>
