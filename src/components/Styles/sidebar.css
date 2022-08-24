@@ -1,0 +1,15 @@
+.sidebar {
+    /* border: 1px solid black; */
+}
+
+.full-time {
+    display: flex;
+    align-items: center;
+    margin-top: 3em ;
+}
+
+#demo-radio-buttons-group-label {
+    color: var(--color);
+    font-weight: 700;
+    text-decoration: underline;
+}
