@@ -1,20 +1,17 @@
 .jobs-section {
   display: flex;
   justify-content: center;
-  gap: 7em;
-}
-
-.jobs {
+  gap: 4em;
 }
 
 .job {
   background-color: var(--secondary-background2);
-  width: 30em;
+  width: 25em;
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 1.5em;
-  gap: 1em;
+  padding: 1em;
+  gap: 0.2em;
   font-weight: 700;
   margin-bottom: 1em;
   border-radius: var(--borderRadius);
@@ -41,6 +38,18 @@
 .date-posted {
   opacity: 0.7;
   font-size: 12px;
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
+}
+
+.job-location {
+  margin-left: -5px;
+  gap: 0;
+}
+
+.location-icon {
+  height: 1.1em;
 }
 
 .job-type {
@@ -51,6 +60,12 @@
 
 .date-posted {
   align-self: flex-end;
+  font-style: italic;
+}
+
+.date-posted-icon {
+  opacity: 0.5;
+  width: 1em;
 }
 
 .fulltime {

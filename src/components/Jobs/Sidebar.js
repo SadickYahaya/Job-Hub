@@ -15,7 +15,7 @@ const theme = createTheme({
       main: purple[500],
     },
     secondary: {
-      main: "#e63946",
+      main: "#457b9d",
     },
   },
 });
@@ -93,31 +93,29 @@ const Sidebar = () => {
             />
           </RadioGroup>
         </FormControl>
-        <>
+
+        <div className="full-time-checkbox">
           <ThemeProvider theme={theme}>
-            <div className="full-time">
-              <FormControlLabel
-                className="checkbox"
-                control={
-                  <Checkbox size="small" color="secondary" name="paid" />
-                }
-                label={
-                  <span
-                    style={{
-                      fontFamily: "Lato",
-                      fontWeight: "700",
-                      fontSize: "14px",
-                    }}
-                  >
-                    Full Time
-                  </span>
-                }
-                value="paid"
-                id="paid"
-              />
-            </div>
+            <FormLabel id="demo-radio-buttons-group-label">Job Type</FormLabel>
+            <FormControlLabel
+              className="checkbox"
+              control={<Checkbox size="small" color="secondary" name="paid" />}
+              label={
+                <span
+                  style={{
+                    fontFamily: "Lato",
+                    fontWeight: "700",
+                    fontSize: "14px",
+                  }}
+                >
+                  Full Time
+                </span>
+              }
+              value="paid"
+              id="paid"
+            />
           </ThemeProvider>
-        </>
+        </div>
       </div>
     </>
   );
