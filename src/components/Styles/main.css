@@ -1,9 +1,9 @@
 .jobs-section {
   display: grid;
-  grid-template-columns: 15% 80%;
+  grid-template-columns: 25% 50%;
   place-content: center;
-  grid-gap: 2em;
-  width: auto;
+  grid-gap: 1em;
+  width: 80%;
   margin: 4em;
   margin-top: 2em;
 }
@@ -20,7 +20,7 @@
 
 .jobs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1em;
 }
 
@@ -29,7 +29,8 @@
   width: auto;
   height: auto;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  justify-content: space-between;
   padding: 1em;
   gap: 1em;
   font-weight: 700;
@@ -76,10 +77,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column-reverse;
 }
 
 .date-posted {
-  align-self: flex-end;
   font-style: italic;
 }
 
@@ -125,6 +126,5 @@
     width: auto;
     justify-content: center;
     align-content: center;
-    
   }
 }
