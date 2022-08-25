@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import useLocalStorage from "use-local-storage";
 
 import Header from "./components/Header";
-import Main from "./components/Main";
 // import Search from "./components/Search";
 import { lightTheme, darkTheme } from "./utils/theme";
 import { GlobalStyles } from "./utils/global";
