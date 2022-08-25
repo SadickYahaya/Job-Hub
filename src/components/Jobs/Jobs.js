@@ -27,9 +27,9 @@ const Jobs = () => {
         jobType="FullTime"
       />
       <Job logo={jobLogo3}
-        jobTitle="Python Developer"
-        companyName="Twitter"
-        location="Kumasi, Ghana"
+        jobTitle="Senior React Developer"
+        companyName="Amalitech"
+        location="Takoradi, Ghana"
         datePosted="2 days ago"
         jobType="FullTime" />
       <Job />

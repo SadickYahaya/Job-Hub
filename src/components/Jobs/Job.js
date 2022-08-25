@@ -23,9 +23,9 @@ const Job = (props) => {
         </div>
         <div className="job-type">
           <span className="date-posted">
-            <TimeIcon className="date-posted-icon" />{props}
+            <TimeIcon className="date-posted-icon" />{props.datePosted}
           </span>
-          <span className="fulltime">Fulltime</span>
+          <span className="fulltime">{props.jobType}</span>
         </div>
       </div>
     </>
