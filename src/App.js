@@ -9,6 +9,7 @@ import Main from "./components/Main";
 import { lightTheme, darkTheme } from "./utils/theme";
 import { GlobalStyles } from "./utils/global";
 import JobDetails from "./components/Jobs/JobDetails";
+import Home from "./components/Home";
 
 const App = () => {
   const [theme, setTheme] = useLocalStorage("light");
@@ -27,7 +28,7 @@ const App = () => {
         <GlobalStyles className="global" />
         <Header onClick={toggleTheme} darkMode={setTheme} />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Home />} />
           <Route path="/job-details" element={<JobDetails />} />
         </Routes>
       </ThemeProvider>

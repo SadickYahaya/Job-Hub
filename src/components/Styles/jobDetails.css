@@ -1,7 +1,7 @@
 .job-details {
   display: grid;
   grid-template-columns: 30% 70%;
-  width: 90vw;
+  width: 80%;
   place-content: center;
   margin: 0 auto;
   margin-top: 1em;

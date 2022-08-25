@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "./Header";
+// import Header from "./Header";
 import Main from "./Main";
+import Search from "./Search";
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+      <Search />
       <Main />
     </div>
   );
